@@ -1,1 +1,1 @@
-Welcome to the CamickCraft github
+Welcome to the TerraCraft github
