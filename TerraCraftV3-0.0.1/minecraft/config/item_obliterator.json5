@@ -1,0 +1,207 @@
+{
+  // -----------------------------------------------------------
+  //              Item Obliterator by ElocinDev
+  // -----------------------------------------------------------
+  //  
+  // How to add items?
+  //   - They are json strings, so you need to separate each
+  //     entry with a comma, except the last
+  //   - If you start an entry with !, it will be treated as a regular expression
+  //     Example: "!minecraft:.*_sword" to disable all swords
+  //  
+  // -----------------------------------------------------------
+  // Do not touch this
+  "configVersion": 2,
+  // -----------------------------------------------------------
+  // Items here will be unusable completely
+  //    Example: minecraft:diamond
+  "blacklisted_items": [
+    "ars_nouveau:sorcerer_robes",
+    "ars_nouveau:sorcerer_boots",
+    "ars_nouveau:sorcerer_leggings",
+    "ars_nouveau:sorcerer_hood",
+    "ars_nouveau:arcanist_boots",
+    "ars_nouveau:arcanist_leggings",
+    "ars_nouveau:arcanist_robes",
+    "ars_nouveau:arcanist_hood",
+    "ars_nouveau:battlemage_boots",
+    "ars_nouveau:battlemage_leggings",
+    "ars_nouveau:battlemage_robes",
+    "ars_nouveau:battlemage_hood",
+    "ars_nouveau:blank_thread",
+    "ars_elemental:earth_hat",
+    "ars_elemental:earth_robes",
+    "ars_elemental:earth_leggings",
+    "ars_elemental:earth_boots",
+    "ars_elemental:fire_hat",
+    "ars_elemental:fire_robes",
+    "ars_elemental:fire_leggings",
+    "ars_elemental:fire_boots",
+    "ars_elemental:air_hat",
+    "ars_elemental:air_robes",
+    "ars_elemental:air_leggings",
+    "ars_elemental:air_boots",
+    "ars_elemental:aqua_hat",
+    "ars_elemental:aqua_robes",
+    "ars_elemental:aqua_leggings",
+    "ars_elemental:aqua_boots",
+    "simplyswords:runic_tablet",
+    "simplyswords:runefused_gem",
+    "simplyswords:netherfused_gem",
+    "simplyswords:empowered_remnant",
+    "simplyswords:contained_remnant",
+    "simplyswords:tampered_remnant",
+    "simplyswords:runic_longsword",
+    "simplyswords:runic_twinblade",
+    "simplyswords:runic_rapier",
+    "simplyswords:runic_katana",
+    "simplyswords:runic_sai",
+    "simplyswords:runic_spear",
+    "simplyswords:runic_glaive",
+    "simplyswords:runic_cutlass",
+    "simplyswords:runic_claymore",
+    "simplyswords:runic_chakram",
+    "simplyswords:runic_greataxe",
+    "simplyswords:runic_greathammer",
+    "simplyswords:runic_warglaive",
+    "simplyswords:runic_scythe",
+    "simplyswords:runic_halberd",
+    "advancednetherite:netherite_iron_sword",
+    "advancednetherite:netherite_gold_sword",
+    "advancednetherite:netherite_emerald_sword",
+    "advancednetherite:netherite_diamond_sword",
+    "simplyswords:watching_warglaive",
+    "simplyswords:soulpyre",
+    "simplyswords:stormbringer",
+    "simplyswords:soulkeeper",
+    "simplyswords:shadowsting",
+    "artifacts:scarf_of_invisibility",
+    "ramcompat:tendon_lump",
+    "relics:elytra_booster",
+    "relics:midnight_robe",
+    "more_bows_and_arrows:amethyst_bow",
+    "more_bows_and_arrows:coal_bow",
+    "more_bows_and_arrows:copper_bow",
+    "more_bows_and_arrows:lapis_bow",
+    "more_bows_and_arrows:paper_bow",
+    "more_bows_and_arrows:acacia_bow",
+    "more_bows_and_arrows:birch_bow",
+    "more_bows_and_arrows:cherry_bow",
+    "more_bows_and_arrows:crimson_stem_bow",
+    "more_bows_and_arrows:dark_oak_bow",
+    "more_bows_and_arrows:jungle_bow",
+    "more_bows_and_arrows:mangrove_bow",
+    "more_bows_and_arrows:oak_bow",
+    "more_bows_and_arrows:spruce_bow",
+    "more_bows_and_arrows:warped_stem_bow",
+    "more_bows_and_arrows:stripped_acacia_bow",
+    "more_bows_and_arrows:stripped_bamboo_bow",
+    "more_bows_and_arrows:stripped_birch_bow",
+    "more_bows_and_arrows:stripped_cherry_bow",
+    "more_bows_and_arrows:stripped_crimson_stem_bow",
+    "more_bows_and_arrows:stripped_dark_oak_bow",
+    "more_bows_and_arrows:stripped_jungle_bow",
+    "more_bows_and_arrows:stripped_mangrove_bow",
+    "more_bows_and_arrows:stripped_oak_bow",
+    "more_bows_and_arrows:stripped_spruce_bow",
+    "more_bows_and_arrows:stripped_warped_stem_bow",
+    "more_bows_and_arrows:really_big_arrow",
+    "more_bows_and_arrows:coal_arrow",
+    "more_bows_and_arrows:flint_arrow",
+    "more_bows_and_arrows:lapis_arrow",
+    "more_bows_and_arrows:paper_arrow",
+    "cataclysm:meat_shredder",
+    "alloyed:steel_helmet",
+    "alloyed:steel_chestplate",
+    "alloyed:steel_leggings",
+    "alloyed:steel_boots",
+    "cataclysm:blazing_grips",
+    "cataclysm:guantlet_of_bulwark",
+    "cataclysm:the_annihilator",
+    "enigmaticlegacy:etherium_chestplate",
+    "enigmaticlegacy:etherium_leggings",
+    "enigmaticlegacy:etherium_boots",
+    "enigmaticlegacy:etherium_helmet",
+    "enigmaticlegacy:etherium_sword",
+    "enigmaticlegacy:avarice_scroll",
+    "enigmaticaddons:evil_dagger",
+    "enigmaticaddons:bless_ring",
+    "enigmaticlegacy:the_infinitum",
+    "enigmaticaddons:the_bless",
+    "enigmaticlegacy:soul_compass",
+    "enigmaticlegacy:the_twist",
+    "enigmaticlegacy:ender_slayer",
+    "enigmaticaddons:bless_amplifier",
+    "enigmaticaddons:false_justice",
+    "enigmaticaddons:cursed_xp_scroll",
+    "enigmaticaddons:totem_of_malice",
+    "enigmaticlegacy:desolation_ring",
+    "relics:magic_mirror",
+    "immersive_armors:robe_helmet",
+    "immersive_armors:robe_chestplate",
+    "immersive_armors:robe_leggings",
+    "immersive_armors:robe_boots",
+    "cataclysm_spellbooks:excelsius_speed_visors",
+    "cataclysm_spellbooks:excelsius_speed_chestplate",
+    "cataclysm_spellbooks:excelsius_power_visors",
+    "cataclysm_spellbooks:excelsius_power_chestplate",
+    "cataclysm_spellbooks:excelsius_resist_visors",
+    "cataclysm_spellbooks:excelsius_resist_chestplate",
+    "cataclysm_spellbooks:excelsius_leggings",
+    "cataclysm_spellbooks:excelsius_greaves",
+    "cataclysm_spellbooks:cursium_mage_circlet",
+    "cataclysm_spellbooks:cursium_mage_chestplate",
+    "cataclysm_spellbooks:cursium_mage_elytra",
+    "cataclysm_spellbooks:cursium_mage_skirt",
+    "cataclysm_spellbooks:cursium_mage_boots",
+    "traveloptics:mechanized_exoskeleton_helmet",
+    "traveloptics:mechanized_exoskeleton_chestplate",
+    "traveloptics:mechanized_exoskeleton_leggings",
+    "traveloptics:mechanized_exoskeleton_boots",
+    "alexscaves:immortal_embryo",
+    "enigmaticaddons:violence_scroll",
+    "enigmaticlegacy:enigmatic_elytra",
+    "enigmaticlegacy:eldritch_amulet",
+    "enigmaticaddons:chaos_elytra",
+    "enigmaticlegacy:cursed_ring",
+    "traveloptics:flames_of_eldritch",
+    "traveloptics:harbingers_wrath",
+    "irons_spellbooks:alchemist_cauldron"
+  ],
+  // -----------------------------------------------------------
+  // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
+  // Use with caution! This is a very expensive operation and can cause lag if you have a lot of items blacklisted.
+  // 	
+  // 	 Example to disable a regeneration potion: Potion:"minecraft:regeneration"
+  // 	
+  // 	 You can also use regular expressions by starting the value with !
+  "blacklisted_nbt": [],
+  // -----------------------------------------------------------
+  // Items here will not be able to be right-clicked (Interact)
+  //    Example: minecraft:apple
+  "only_disable_interactions": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // Items here will not be able to be used to attack
+  //    Example: minecraft:diamond_sword
+  "only_disable_attacks": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // Items here will get their recipes disabled
+  // Keep in mind this already is applied to blacklisted items
+  "only_disable_recipes": [
+    "examplemod:example_item",
+    "traveloptics:abyssal_upgrade_smithing_template",
+    "enigmaticlegacy:etherium_ingot"
+  ],
+  // -----------------------------------------------------------
+  // If true, the mod will use a hashset to handle the blacklisted items
+  // This is a more optimized approach only if you have a lot of items blacklisted (20 or more is recommended)
+  // If you just have a small amount of items blacklisted, keep this false
+  //  
+  // [!] Enabling this will disable all regular expressions
+  // [!] Does not apply to NBT, only item blacklist / interaction / attack
+  "use_hashmap_optimizations": true
+}

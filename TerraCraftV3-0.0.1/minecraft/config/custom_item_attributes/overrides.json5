@@ -1,0 +1,3961 @@
+{
+  // ---------------------------------------------------------------------------------------------------------------------------------
+  //                                            Custom Item Attributes (CIA) by ElocinDev
+  // ---------------------------------------------------------------------------------------------------------------------------------
+  //                                                        Overrides Config 
+  //                                Reloaded via datapack reload (/reload) or by restarting the game
+  // ---------------------------------------------------------------------------------------------------------------------------------
+  // Option Index:
+  //       item        :           The item's identifier. You can get this using the autocomplete of the /give command.
+  //       slot        :           A list of slots where the attributes should be applied.
+  //       attribute   :           The Identifier of the attribute. You can get it using the autocomplete of the /attribute command.
+  //       value       :           The value of the desired attribute. You can use negatives too, must be a decimal number.
+  //       operation   :           The operation to calculate the attribute. Addition or Multiply.
+  //       unbreakable :           Whether or not the item should be unbreakable.
+  //       force_unbreakable :     Force the unbreakable tag over other mods. Setting this to true will break the Hardening Catalyst from Things from being used on that item!
+  // ---------------------------------------------------------------------------------------------------------------------------------
+  // Slots:
+  //       mainhand    :   The main hand slot.
+  //       offhand     :   The off hand slot.
+  //       head        :   The head slot.
+  //       chest       :   The chest slot.
+  //       legs        :   The legs slot.
+  // ------------------------------------------------------------------------------------------------------------------------------
+  // The example showcases a config to add +10 attack damage and +20% attack speed to an "example_item", on both the main hand and off hand.
+  // Each of the attributes are overrides for modifiers of the same attribute type, depending on each slot correspondingly.
+
+
+  // most of these are used to edit the properties of the mage armor as kubejs wasn't working
+
+  // deepling set ----------------------------------------------------------------------
+  "items": [
+    {
+      "item": "traveloptics:deepling_mage_armor_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:deepling_mage_armor_robe",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:deepling_mage_armor_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:deepling_mage_armor_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+    // wandering magician set ----------------------------------------------------------------------
+    {
+      "item": "irons_spellbooks:wandering_magician_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:wandering_magician_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:wandering_magician_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:wandering_magician_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+    // Archevoker set ----------------------------------------------------------------------
+    {
+      "item": "irons_spellbooks:archevoker_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:evocation_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:archevoker_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:evocation_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:archevoker_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:evocation_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:archevoker_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:evocation_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // Scarecrow set ----------------------------------------------------------------------
+    {
+      "item": "irons_spellbooks:pumpkin_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:pumpkin_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:pumpkin_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:pumpkin_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // Pyromancer set ----------------------------------------------------------------------
+    {
+      "item": "irons_spellbooks:pyromancer_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:pyromancer_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:pyromancer_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:pyromancer_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // electromancer set ----------------------------------------------------------------------
+    {
+      "item": "irons_spellbooks:electromancer_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:technomancy_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:electromancer_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:technomancy_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:electromancer_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:technomancy_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:electromancer_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:technomancy_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // cryomancer set ----------------------------------------------------------------------
+    {
+      "item": "irons_spellbooks:cryomancer_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:cryomancer_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:cryomancer_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:cryomancer_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -0.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // cultist set ----------------------------------------------------------------------
+    {
+      "item": "irons_spellbooks:cultist_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:cultist_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:cultist_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:cultist_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+    // plague set ----------------------------------------------------------------------
+    {
+      "item": "irons_spellbooks:plagued_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 3,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:plagued_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 3,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:plagued_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 3,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:plagued_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 3,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // netherite battlemage set ----------------------------------------------------------------------
+    {
+      "item": "irons_spellbooks:netherite_mage_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:netherite_mage_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:netherite_mage_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:netherite_mage_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // engineer set ----------------------------------------------------------------------
+    {
+      "item": "cataclysm_spellbooks:engineer_hood",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:technomancy_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:engineer_suit",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:technomancy_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:engineer_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:technomancy_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:engineer_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:technomancy_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+    // bloom stone set ----------------------------------------------------------------------
+    {
+      "item": "cataclysm_spellbooks:bloom_stone_hat",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_magic_resist",
+          "value": -0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.1,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:bloom_stone_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_magic_resist",
+          "value": -0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.1,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:bloom_stone_skirt",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_magic_resist",
+          "value": -0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": -3,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:bloom_stone_greaves",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": -25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_magic_resist",
+          "value": -0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.1,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // priest set ----------------------------------------------------------------------
+    {
+      "item": "irons_spellbooks:priest_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:priest_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:priest_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:priest_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // Shadow-walker set ----------------------------------------------------------------------
+    {
+      "item": "irons_spellbooks:shadowwalker_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 3,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:shadowwalker_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 3,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:shadowwalker_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 3,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "irons_spellbooks:shadowwalker_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 3,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+    // pharaoh set ----------------------------------------------------------------------
+    {
+      "item": "cataclysm_spellbooks:pharaoh_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": 1,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:pharaoh_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": 1,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:pharaoh_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": 1,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:pharaoh_greaves",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "value": 1,
+          "operation": "ADDITION"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // primordial crest armor ----------------------------------------------------------------------
+    {
+      "item": "traveloptics:primordial_crest_armor_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:nature_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 2.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 65,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:primordial_crest_armor_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:nature_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 2.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 65,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:primordial_crest_armor_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:nature_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 2.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 65,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:primordial_crest_armor_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:nature_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 2.5,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 65,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // riptide sovereign armor ----------------------------------------------------------------------
+    {
+      "item": "traveloptics:riptide_sovereign_hat",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:riptide_sovereign_fincloak",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:riptide_sovereign_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:riptide_sovereign_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:lightning_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // tectonic crest armor ----------------------------------------------------------------------
+    {
+      "item": "traveloptics:tectonic_crest_armor_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:tectonic_crest_armor_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:tectonic_crest_armor_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:tectonic_crest_armor_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // abyssal warlock armor ----------------------------------------------------------------------
+    {
+      "item": "cataclysm_spellbooks:abyssal_warlock_mask",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.10,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.10,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.10,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:abyssal_warlock_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:abyssal_warlock_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:abyssal_warlock_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:abyssal_warlock_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "traveloptics:aqua_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // ignis mage armor ----------------------------------------------------------------------
+    {
+      "item": "cataclysm_spellbooks:ignis_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:ignis_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:ignis_chestplate_elytra",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:ignis_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm_spellbooks:ignis_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": -0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // abyssal hide armor ----------------------------------------------------------------------
+    {
+      "item": "traveloptics:abyssal_hide_armor_hat",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:abyssal_hide_armor_robe",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:abyssal_hide_armor_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:abyssal_hide_armor_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_spell_power",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "cataclysm_spellbooks:abyssal_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // cursed wraithguard armor ----------------------------------------------------------------------
+    {
+      "item": "traveloptics:cursed_wraithguard_crown",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:cursed_wraithguard_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:cursed_wraithguard_spectral_wrapping",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:cursed_wraithguard_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": -0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.025,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+    // forlorn harbinger armor ----------------------------------------------------------------------
+    {
+      "item": "traveloptics:forlorn_harbinger_hood",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:eldritch_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:forlorn_harbinger_robe",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:eldritch_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:forlorn_harbinger_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:eldritch_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "traveloptics:forlorn_harbinger_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 25,
+          "operation": "ADDITION"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:eldritch_spell_power",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.075,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // netherite armors -------------------------------------------------------------------------------------
+    {
+      "item": "minecraft:netherite_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "minecraft:netherite_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "minecraft:netherite_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "minecraft:netherite_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    // iron ---------------
+    {
+      "item": "advancednetherite:netherite_iron_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "advancednetherite:netherite_iron_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "advancednetherite:netherite_iron_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "advancednetherite:netherite_iron_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    // gold ----------------------------
+    {
+      "item": "advancednetherite:netherite_gold_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.07,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "advancednetherite:netherite_gold_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.07,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "advancednetherite:netherite_gold_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.07,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "advancednetherite:netherite_gold_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.07,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    // emerald ---------------------------
+    {
+      "item": "advancednetherite:netherite_emerald_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.07,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "advancednetherite:netherite_emerald_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.07,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "advancednetherite:netherite_emerald_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.07,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "advancednetherite:netherite_emerald_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.07,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    // diamond -----------------------------
+    {
+      "item": "advancednetherite:netherite_diamond_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "advancednetherite:netherite_diamond_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "advancednetherite:netherite_diamond_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "advancednetherite:netherite_diamond_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // Dragonsteel armors -------------------------------------------------
+    {
+      "item": "iceandfire:dragonsteel_fire_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "iceandfire:dragonsteel_fire_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "iceandfire:dragonsteel_fire_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "iceandfire:dragonsteel_fire_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "iceandfire:dragonsteel_ice_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "iceandfire:dragonsteel_ice_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "iceandfire:dragonsteel_ice_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "iceandfire:dragonsteel_ice_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "iceandfire:dragonsteel_lightning_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "iceandfire:dragonsteel_lightning_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "iceandfire:dragonsteel_lightning_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "iceandfire:dragonsteel_lightning_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.125,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // ignitum armor --------------------------------------------------------------
+    {
+      "item": "cataclysm:ignitium_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm:ignitium_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm:ignitium_elytra_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm:ignitium_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm:ignitium_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+
+
+    // cursium armor ------------------------------------------------------------
+    {
+      "item": "cataclysm:cursium_helmet",
+      "affected_slots": [
+        "head"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm:cursium_chestplate",
+      "affected_slots": [
+        "chest"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm:cursium_leggings",
+      "affected_slots": [
+        "legs"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    },
+    {
+      "item": "cataclysm:cursium_boots",
+      "affected_slots": [
+        "feet"
+      ],
+      "attribute_overrides": [
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.15,
+          "operation": "MULTIPLY_BASE"
+        }
+      ],
+      "unbreakable": false,
+      "force_unbreakable": false
+    }
+  ],
+  // Don't touch this!
+  "CONFIG_VERSION": 2
+}

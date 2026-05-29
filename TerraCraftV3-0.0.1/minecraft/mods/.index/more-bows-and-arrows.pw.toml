@@ -1,0 +1,16 @@
+filename = 'more_bows_and_arrows-merged-1.20.1-5.0.1.jar'
+name = 'More Bows and Arrows | Major Update Available!'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '78d4bd0bc5f700aacc128d2e243096c7ebd03a06'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6843671
+project-id = 888468

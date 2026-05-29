@@ -1,0 +1,15 @@
+#
+#waypoint:name:initials:x:y:z:color:disabled:type:set:rotate_on_tp:tp_yaw:visibility_type:destination
+#
+waypoint:mysterious base:M:391:72:-1016:2:false:0:gui.xaero_default:false:0:0:false
+waypoint:Andrew Base:A:331:141:854:2:false:0:gui.xaero_default:false:0:0:false
+waypoint:Lucas base:L:4626:69:3783:4:false:0:gui.xaero_default:false:0:0:false
+waypoint:Shared Location:S:-772:63:-492:5:false:0:gui.xaero_default:false:0:0:false
+waypoint:WTC:W:2381:72:-720:6:false:0:gui.xaero_default:false:0:0:false
+waypoint:WTC:W:2381:72:-720:6:false:0:gui.xaero_default:false:0:0:false
+waypoint:Elijah Base:E:-1443:63:1285:4:false:0:gui.xaero_default:false:0:0:false
+waypoint:Elijah Ancient City:E:928:119:2512:1:false:0:gui.xaero_default:false:0:0:false
+waypoint:Cameron Base:C:-96:-22:-2324:2:false:0:gui.xaero_default:false:0:0:false
+waypoint:Base:B:4866:133:-266:3:false:0:gui.xaero_default:false:0:0:false
+waypoint:Ocean Temple:O:5280:63:1311:13:false:0:gui.xaero_default:false:0:0:false
+waypoint:Ancient city:A:4061:114:-259:14:false:0:gui.xaero_default:false:0:0:false

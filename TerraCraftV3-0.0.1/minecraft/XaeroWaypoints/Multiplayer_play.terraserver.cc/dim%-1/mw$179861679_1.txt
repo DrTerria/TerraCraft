@@ -1,0 +1,7 @@
+#
+#waypoint:name:initials:x:y:z:color:disabled:type:set:rotate_on_tp:tp_yaw:visibility_type:destination
+#
+waypoint:Cameron Portal:C:0:65:-296:12:false:0:gui.xaero_default:false:0:0:false
+waypoint:Elijah Portal:E:-176:67:158:1:false:0:gui.xaero_default:false:0:0:false
+waypoint:WTC Portal:W:290:75:-91:6:false:0:gui.xaero_default:false:0:0:false
+waypoint:Home Portal:H:617:114:-45:5:false:0:gui.xaero_default:false:0:0:false

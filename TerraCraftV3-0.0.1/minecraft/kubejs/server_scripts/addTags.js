@@ -1,0 +1,11 @@
+ServerEvents.tags('item', event => {
+    event.add('forge:dragonsteel_ingots', 'iceandfire:dragonsteel_fire_ingot')
+    event.add('forge:dragonsteel_ingots', 'iceandfire:dragonsteel_ice_ingot')
+    event.add('forge:dragonsteel_ingots', 'iceandfire:dragonsteel_lightning_ingot')
+    event.add('forge:dragonsteel_swords', 'iceandfire:dragonsteel_lightning_sword')
+    event.add('forge:dragonsteel_swords', 'iceandfire:dragonsteel_fire_sword')
+    event.add('forge:dragonsteel_swords', 'iceandfire:dragonsteel_ice_sword')
+    event.add('forge:dragonsteel_axes', 'iceandfire:dragonsteel_ice_axe')
+    event.add('forge:dragonsteel_axes', 'iceandfire:dragonsteel_fire_axe')
+    event.add('forge:dragonsteel_axes', 'iceandfire:dragonsteel_lightning_axe')
+})

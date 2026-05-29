@@ -1,0 +1,32 @@
+{
+  "enigmaticaddons:quartz_ring": [
+    {
+      "attribute": "irons_spellbooks:spell_resist",
+      "value": 0.15,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:ring"
+    }
+  ],
+  "enigmaticlegacy:eye_of_nebula": [
+    {
+      "attribute": "irons_spellbooks:spell_resist",
+      "value": 0.3,
+      "operation": "MULTIPLY_BASE", 
+      "slot": "curio:spellstone"
+    },
+    {
+      "attribute": "irons_spellbooks:spell_power",
+      "value": 0.15,
+      "operation": "MULTIPLY_BASE", 
+      "slot": "curio:spellstone"
+    }
+  ],
+  "enigmaticaddons:etherium_core": [
+    {
+      "attribute": "irons_spellbooks:spell_resist",
+      "value": 0.20,
+      "operation": "MULTIPLY_BASE", 
+      "slot": "curio:spellstone"
+    }
+  ]
+}

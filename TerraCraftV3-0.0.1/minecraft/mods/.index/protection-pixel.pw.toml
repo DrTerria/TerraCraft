@@ -1,0 +1,16 @@
+filename = 'protection_pixel-1.1.7-forge-1.20.1.jar'
+name = 'Create: Protection Pixel'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'cf11cf546875509a461e8ede7d487ba28f3df2a6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6707830
+project-id = 1023409

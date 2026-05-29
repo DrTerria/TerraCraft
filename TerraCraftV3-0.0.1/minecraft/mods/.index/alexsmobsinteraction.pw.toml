@@ -1,0 +1,16 @@
+filename = 'alexsmobsinteraction-5.4-all.jar'
+name = "Alex's Mobs Interaction"
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '4b5376f52539122e8eca84679a7aa540ad15e0d4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6410554
+project-id = 975640

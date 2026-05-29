@@ -1,0 +1,16 @@
+filename = 'traveloptics-6.0.0-1.20.1.jar'
+name = "T.O Magic 'n Extras - Iron's Spells Addon"
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '34905892a565a2e4f032df312391ee272f4a8b09'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7358354
+project-id = 1046916

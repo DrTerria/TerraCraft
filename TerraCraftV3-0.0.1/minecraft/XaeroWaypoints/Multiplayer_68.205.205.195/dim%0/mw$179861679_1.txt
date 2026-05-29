@@ -1,0 +1,11 @@
+#
+#waypoint:name:initials:x:y:z:color:disabled:type:set:rotate_on_tp:tp_yaw:visibility_type:destination
+#
+waypoint:Shared Location:S:-746:76:2717:7:false:0:gui.xaero_default:false:0:0:false
+waypoint:Andrew base:A:327:148:853:0:false:0:gui.xaero_default:false:0:0:false
+waypoint:Thyssen + Elijah base:T:-1440:71:1266:15:false:0:gui.xaero_default:false:0:0:false
+waypoint:Brando Base:B:-404:85:-454:9:false:0:gui.xaero_default:false:0:0:false
+waypoint:Spawn:S:0:69:0:10:false:0:gui.xaero_default:false:0:0:false
+waypoint:Lucas Base:L:4630:101:3800:5:false:0:gui.xaero_default:false:0:0:false
+waypoint:Will+Nick base:W:4863:133:-266:6:false:0:gui.xaero_default:false:0:0:false
+waypoint:World Trade Center:W:2380:72:-726:4:false:0:gui.xaero_default:false:0:0:false

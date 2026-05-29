@@ -1,0 +1,429 @@
+{
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2026-05-27 14:50:17 -0400"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2026-05-27 14:50:17 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/misc/cosmic_cake": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/misc/mega_sponge": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/misc/hunter_guidebook": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/accessories/iron_ring": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticaddons:book/tools/disaster_sword": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticaddons:book/misc/ichoroot": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticaddons:book/tools/astral_spear": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/accessories/ender_ring": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/misc/infinimeal": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/misc/animal_guidebook": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/misc/extradimensional_eye": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/misc/end_anchor": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/misc/astral_potato": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticaddons:book/tools/ichor_spear": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/misc/lore_inscriber": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "ars_nouveau:root": {
+    "criteria": {
+      "ars_nouveau:worn_notebook": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/decorations/lamp": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticaddons:book/tools/extradimensional_scepter": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticaddons:book/tools/quartz_scepter": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/tools/etherium_axe": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/misc/twisted_mirror": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/decorations/shroomlamp": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/accessories/golden_ring": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/tools/forbidden_axe": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/tools/etherium_scythe": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/decorations/redstone_lantern": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticaddons:book/misc/ode_to_living": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticaddons:book/tools/dragon_bow": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/tools/eldritch_pan": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/tools/etherium_shovel": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/tools/etherium_pickaxe": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/accessories/monster_charm": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/accessories/berserk_charm": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/accessories/insignia": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/accessories/cursed_scroll": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticaddons:book/misc/sanguinary_handbook": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/misc/curse_transposer": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/tools/astral_breaker": {
+    "criteria": {
+      "has_the_recipe": "2026-05-27 14:50:18 -0400"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/root": {
+    "criteria": {
+      "tick": "2026-05-27 14:50:28 -0400"
+    },
+    "done": true
+  },
+  "undead_revamp2:theundeadchallenges": {
+    "criteria": {
+      "theundeadchallenges_0": "2026-05-27 14:50:28 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/relics/cursed_ring": {
+    "criteria": {
+      "has_items": "2026-05-27 14:50:28 -0400"
+    },
+    "done": true
+  },
+  "simplyswords:grant_book_on_first_join": {
+    "criteria": {
+      "tick": "2026-05-27 14:50:28 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:book/relics/enigmatic_amulet": {
+    "criteria": {
+      "has_items": "2026-05-27 14:50:28 -0400"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:main/root": {
+    "criteria": {
+      "flower": "2026-05-27 14:50:28 -0400"
+    },
+    "done": true
+  },
+  "mowziesmobs:root": {
+    "criteria": {
+      "custom_test_name": "2026-05-27 14:50:28 -0400"
+    },
+    "done": true
+  },
+  "alexsmobsinteraction:root": {
+    "criteria": {
+      "tick": "2026-05-27 14:50:28 -0400"
+    },
+    "done": true
+  },
+  "create_more_cakes:more_cakes": {
+    "criteria": {
+      "more_cakes_0": "2026-05-27 14:50:28 -0400"
+    },
+    "done": true
+  },
+  "traveloptics:root": {
+    "criteria": {
+      "custom_test_name": "2026-05-27 14:50:28 -0400"
+    },
+    "done": true
+  },
+  "cataclysm:root": {
+    "criteria": {
+      "custom_test_name": "2026-05-27 14:50:28 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:grant_patchouli": {
+    "criteria": {
+      "tick": "2026-05-27 14:50:28 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:sunflower_plains": "2026-05-27 15:08:24 -0400",
+      "minecraft:cherry_grove": "2026-05-27 19:41:04 -0400",
+      "minecraft:birch_forest": "2026-05-27 15:07:49 -0400",
+      "minecraft:river": "2026-05-27 14:52:26 -0400",
+      "minecraft:dripstone_caves": "2026-05-27 15:01:12 -0400",
+      "minecraft:forest": "2026-05-27 14:50:30 -0400",
+      "minecraft:plains": "2026-05-27 14:52:21 -0400"
+    },
+    "done": false
+  },
+  "iceandfire:iceandfire/dragonsteel": {
+    "criteria": {
+      "steel": "2026-05-27 14:51:12 -0400"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/dragonsteel_weapon": {
+    "criteria": {
+      "sword": "2026-05-27 15:02:25 -0400"
+    },
+    "done": true
+  },
+  "netherexp:nether/overkill": {
+    "criteria": {
+      "overkill": "2026-05-27 15:03:19 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2026-05-27 15:03:22 -0400"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/dragon_forge_core": {
+    "criteria": {
+      "core": "2026-05-27 15:07:21 -0400"
+    },
+    "done": true
+  },
+  "apotheosis:spawner/capturing": {
+    "criteria": {
+      "egg": "2026-05-27 15:12:25 -0400"
+    },
+    "done": true
+  },
+  "saintsdragons:encounter_dragon": {
+    "criteria": {
+      "encounter_dragon": "2026-05-27 15:13:10 -0400"
+    },
+    "done": true
+  },
+  "saintsdragons:recipes/ignivorus_binder": {
+    "criteria": {
+      "has_ignivorus_heart": "2026-05-27 15:16:54 -0400"
+    },
+    "done": true
+  },
+  "apotheosis:affix/mythic_gem": {
+    "criteria": {
+      "gem": "2026-05-27 19:40:48 -0400"
+    },
+    "done": true
+  },
+  "apotheosis:affix/gem": {
+    "criteria": {
+      "gem": "2026-05-27 19:40:48 -0400"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/dragon_forge_brick": {
+    "criteria": {
+      "forge": "2026-05-27 19:52:29 -0400"
+    },
+    "done": true
+  },
+  "saintsdragons:recipes/cindervane_binder": {
+    "criteria": {
+      "has_stone_bricks": "2026-05-27 20:09:45 -0400"
+    },
+    "done": true
+  },
+  "saintsdragons:recipes/raevyx_binder": {
+    "criteria": {
+      "has_raevyx_scale": "2026-05-27 20:09:56 -0400"
+    },
+    "done": true
+  },
+  "saintsdragons:acquire_dragon_scale": {
+    "criteria": {
+      "has_dragon_scale": "2026-05-27 20:09:56 -0400"
+    },
+    "done": true
+  },
+  "immersive_armors:recipes/misc/bone": {
+    "criteria": {
+      "has_item": "2026-05-27 20:18:46 -0400"
+    },
+    "done": true
+  },
+  "apotheosis:affix/random": {
+    "criteria": {
+      "sword": "2026-05-27 20:31:05 -0400"
+    },
+    "done": true
+  },
+  "apotheosis:affix/root": {
+    "criteria": {
+      "sword": "2026-05-27 20:31:05 -0400"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

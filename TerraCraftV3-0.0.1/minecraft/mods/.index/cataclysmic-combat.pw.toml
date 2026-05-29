@@ -1,0 +1,16 @@
+filename = 'cataclysmiccombat-1.4.jar'
+name = 'Cataclysmic Combat'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '8a9be47c03a3d18f6ed6615d7a3733a6c9086eab'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5922129
+project-id = 880483

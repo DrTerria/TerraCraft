@@ -1,0 +1,29 @@
+filename = 'irons_spellbooks-1.20.1-3.4.0.11.jar'
+name = "Iron's Spells 'n Spellbooks"
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'v1.20.1-3.4.0.11'
+
+[download]
+hash = '84e0678cdad2c007ee56fa3fef1403a612d07feb'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6970299
+project-id = 855414
+
+[[x-prismlauncher-dependencies]]
+addonId = '309927'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '388172'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '658587'
+type = 'REQUIRED'

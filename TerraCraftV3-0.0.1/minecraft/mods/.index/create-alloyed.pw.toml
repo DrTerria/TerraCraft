@@ -1,0 +1,16 @@
+filename = 'alloyed-1.20.1-c6.0.0-v2.0.jar'
+name = 'Create: Alloyed'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'b6f4c3dfb9268ebbfe19583deb702702601f6098'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6276815
+project-id = 564792

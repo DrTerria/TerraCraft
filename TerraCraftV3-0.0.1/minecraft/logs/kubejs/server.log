@@ -1,0 +1,49 @@
+[20:30:09] [INIT] KubeJS 2001.6.5-build.16; MC 2001 forge
+[20:30:09] [INIT] Loaded plugins:
+[20:30:09] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[20:30:09] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[20:30:09] [INIT] - com.squoshi.irons_spells_js.IronsSpellsJSPlugin
+[20:30:09] [INIT] - com.bobvarioa.kubejsarsnouveau.KubeJSArsNouveauPlugin
+[20:30:09] [INIT] - dev.latvian.mods.kubejs.create.KubeJSCreatePlugin
+[20:30:09] [INIT] - com.almostreliable.lootjs.kube.LootJSPlugin
+[20:30:09] [INIT] - com.blakebr0.cucumber.compat.kubejs.CucumberKubeJSPlugin
+[20:30:10] [INFO] Loaded script server_scripts:armorRecipes.js in 0.009 s
+[20:30:10] [INFO] Loaded script server_scripts:removals.js in 0.002 s
+[20:30:10] [INFO] Loaded script server_scripts:arsRecipes.js in 0.006 s
+[20:30:10] [INFO] Loaded script server_scripts:addTags.js in 0.0 s
+[20:30:10] [INFO] Loaded script server_scripts:arsGlyphRecipes.js in 0.0 s
+[20:30:10] [INFO] Loaded script server_scripts:simplySwordRecipes.js in 0.001 s
+[20:30:10] [INFO] Loaded script server_scripts:createRecipes.js in 0.0 s
+[20:30:10] [INFO] Loaded script server_scripts:lootchanges.js in 0.001 s
+[20:30:10] [INFO] Loaded script server_scripts:itemRecipes.js in 0.003 s
+[20:30:10] [INFO] Loaded 9/9 KubeJS server scripts in 0.03 s with 0 errors and 0 warnings
+[20:30:10] [INFO] Scripts loaded
+[20:30:10] [INFO] Initializing recipe event...
+[20:30:11] [INFO] [minecraft:item] Found 1343 tags, added 9 objects, removed 0 objects
+[20:30:14] [INFO] Processing recipes...
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/chakram[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/twinblade[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/glaive[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/claymore[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/halberd[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/sai[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/warglaive[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/longsword[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'cataclysm:stonecutting/azure_seastone_brick_stair_from_stonecutting[minecraft:stonecutting]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/spear[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'create_things_and_misc:copper_scaffolding_craft[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/katana[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/cutlass[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/greataxe[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/greathammer[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'create_things_and_misc:netheriteportablewithlecraft[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'netherexp:stonecutting/from_pale_soul_slate/indented[minecraft:stonecutting]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/rapier[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'create_things_and_misc:schematic_chair[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [WARN] Failed to parse recipe 'integrated_simply_swords:born_in_chaos/dark_metal/scythe[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[20:30:14] [INFO] Found 9513 recipes in 324.9 ms
+[20:30:15] [INFO] Posted recipe events in 539.1 ms
+[20:30:15] [WARN] Error parsing recipe ars_nouveau:kjs/2lw7r2w2b1hu14mwk44wzp9gy[ars_nouveau:imbuement]: {"type":"ars_nouveau:imbuement","count":1,"input":{"item":"ars_nouveau:wilden_tribute"},"output":"ars_elemental:mark_of_mastery","pedestalItems":[{"item":{"item":"ars_nouveau:earth_essence"}},{"item":{"item":"ars_nouveau:fire_essence"}},{"item":{"item":"ars_nouveau:water_essence"}},{"item":{"item":"ars_nouveau:air_essence"}},{"item":{"item":"ars_nouveau:abjuration_essence"}},{"item":{"item":"ars_nouveau:conjuration_essence"}},{"item":{"item":"ars_nouveau:manipulation_essence"}},{"item":{"item":"ars_nouveau:anima_essence"}},{"item":{"item":"traveloptics:withered_excrucis"}}],"source":10000}: Unknown item 'ars_nouveau:anima_essence'
+[20:30:15] [WARN] Error parsing recipe minecraft:kjs/alexsmobs_poison_bottle_2[kubejs:shapeless]: {"type":"minecraft:crafting_shapeless","result":{"item":"alexsmobs:poison_bottle","count":1},"ingredients":[[]]}: Item array cannot be empty, at least one item must be defined
+[20:30:15] [INFO] Added 297 recipes, removed 224 recipes, modified 34 recipes, with 2 failed recipes in 73.60 ms
+[20:30:21] [INFO] Server resource reload complete!
